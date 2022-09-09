@@ -61,7 +61,7 @@ export default {
   width: 100%;
 
   @media (--desktop-lg) {
-    height: 100%;
+    height: 80rem;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
   }
