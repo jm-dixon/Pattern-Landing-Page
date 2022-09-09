@@ -27,7 +27,7 @@ export default {
 }
 
 .HeroImage__image {
-  @mixin interpolate height, 45, 80;
+  @mixin interpolate height, 45, 65;
 
   width: 100%;
   object-fit: cover;
