@@ -32,7 +32,7 @@ export default {
   object-fit: cover;
 
   @media (--desktop-lg) {
-    height: 100%;
+    height: 80rem;
   }
 }
 </style>

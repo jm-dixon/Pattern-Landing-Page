@@ -71,7 +71,7 @@ export default {
   @mixin interpolate height, 45, 65;
 
   @media (--desktop-lg) {
-    height: 100%;
+    height: 80rem;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
   }
