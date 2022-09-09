@@ -19,6 +19,7 @@ export default {
 </script>
 
 <style lang="postcss">
+@import "~/assets/css/settings/media-queries.css";
 @import "~/assets/css/mixins/utils.css";
 
 .HeroImage {
@@ -26,7 +27,7 @@ export default {
 }
 
 .HeroImage__image {
-  @mixin interpolate height, 45, 65;
+  @mixin interpolate height, 45, 80;
 
   width: 100%;
   object-fit: cover;

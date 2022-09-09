@@ -56,7 +56,7 @@ export default {
 }
 
 .HeroLogo {
-  @mixin interpolate height, 45, 65;
+  @mixin interpolate height, 45, 80;
 
   width: 100%;
 
@@ -68,7 +68,7 @@ export default {
 }
 
 .HeroImage {
-  @mixin interpolate height, 45, 65;
+  @mixin interpolate height, 45, 80;
 
   @media (--desktop-lg) {
     height: 80rem;
