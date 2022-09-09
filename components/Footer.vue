@@ -194,7 +194,7 @@ export default {
   @media (--desktop-lg) {
     display: block;
     position: absolute;
-    right: 7rem;
+    right: 5.5%;
     bottom: 5rem;
     width: max-content;
     margin-bottom: 0;
