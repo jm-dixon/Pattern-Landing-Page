@@ -21,7 +21,6 @@ export default {
   mounted() {
     const mediaQuery = '(min-width: 1440px)';
     this.mediaQueryList = window.matchMedia(mediaQuery);
-    console.log('mediaQueryList', this.mediaQueryList);
 
     this.mediaQueryList.addEventListener('change', this.handleChange);
     this.$store.commit('setisDesktopLg', this.mediaQueryList.matches);
