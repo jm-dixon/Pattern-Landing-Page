@@ -9,14 +9,72 @@
     <p class="Welcome__text text-default">
       Offering flexible office spaces between 1,108 sqft and 32,367 sqft, across 4 floors, The Pattern
       Shop brings you industry leading digital connectivityity and best in class sustainability technology
-      within spaces that exude soulful character. 
+      within spaces that exude soulful character.
     </p>
+    <p class="Welcome__text text-default">
+      <u>
+        Download brochure here
+      </u>
+    </p>
+    <p class="Welcome__text text-default">
+      If you're intrigued to find out more, our team are on hand to discuss
+      your requirements and are always happy to help.
+    </p>
+    <p class="Welcome__text text-default">
+      <u>Patrick Matheson</u>
+    </p>
+    <div class="Welcome__grid">
+      <img :src="icons.phoneIconUrl" class="Welcome__icons">
+      <a href="tel:0191 592 5015">
+        <p class="Welcome__text text-default">
+          0191 592 5015
+        </p>
+      </a>
+    </div>
+    <div class="Welcome__grid">
+      <img :src="icons.emailIconUrl" class="Welcome__icons">
+        <a href="mailto:patrick.matheson@knightfrank.com">
+          <p class="Welcome__text text-default">
+            patrick.matheson@knightfrank.com
+          </p>
+        </a>
+    </div>
+    <p class="Welcome__text text-default">
+      <u>Nathan Douglas</u>
+    </p>
+    <div class="Welcome__grid">
+      <img :src="icons.phoneIconUrl" class="Welcome__icons">
+        <a href="tel:0191 592 5002">
+          <p class="Welcome__text text-default">
+            0191 592 5002
+          </p>
+        </a>
+    </div>
+    <div class="Welcome__grid">
+      <img :src="icons.emailIconUrl" class="Welcome__icons">
+        <a href="mailto:nathan.douglas@knightfrank.com">
+          <p class="Welcome__text text-default">
+            nathan.douglas@knightfrank.com
+          </p>
+        </a>
+    </div>
   </div>
 </template>
 
 <script>
+import phoneIcon from '~/assets/images/THE PATTERNSHOP-Icon-Telephone-RGB.svg';
+import emailIcon from '~/assets/images/THE PATTERNSHOP-Icon-Mail-RGB.svg';
+
 export default {
   name: 'Welcome',
+  data() {
+    return {
+      icons: {
+        phoneIconUrl: phoneIcon,
+        emailIconUrl: emailIcon
+      }
+    }
+  }
 }
 </script>
 
@@ -51,6 +109,22 @@ export default {
 
 .Welcome__text:not(:first-of-type) {
   margin-top: 2rem;
+}
+
+.Welcome__icons {
+  width: 100%;
+  margin-top: 2em;
+}
+
+.Welcome__grid {
+  display: grid;
+  grid-template-columns: 3% 97%;
+  column-gap: 10px;
+  margin: 1em 0 1em 0;
+}
+
+.Welcome__grid p {
+  margin-top: 0.5em;
 }
 
 </style>

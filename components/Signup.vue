@@ -14,10 +14,19 @@
       </label>
     </div>
     <button type="submit" class="Signup__submit-button">Submit</button>
-  </div> 
+
+    <div class="Signup__brochure-download">
+      <h1 class="Signup__heading">Download<br />brochure here</h1>
+
+      <img :src="icons.brochureIconUrl" class="Signup__brochure-icon">
+      <button type="submit" class="Signup__submit-button">Download</button>
+    </div>
+  </div>
 </template>
 
 <script>
+import brochureIcon from 'assets/images/THE PATTERNSHOP-Icon-Brochure-RGB.svg';
+
 export default {
   name: 'Signup',
 
@@ -27,6 +36,9 @@ export default {
       lastName: '',
       email: '',
       acceptedTermsConditions: false,
+      icons: {
+        brochureIconUrl: brochureIcon
+      }
     };
   },
 }
@@ -125,6 +137,16 @@ input[type=checkbox]:checked::after {
   margin-top: var(--spacing-lg);
   background-color: black;
   color: var(--color-primary);
+}
+
+.Signup__brochure-download {
+  padding-top: 5em;
+}
+
+.Signup__brochure-icon {
+  margin-top: var(--spacing-lg);
+  margin-right: 3em;
+  width: 7%;
 }
 
 </style>

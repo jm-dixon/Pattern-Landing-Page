@@ -70,16 +70,16 @@ export default {
         },
       },
       footerLinks: [
-        { 
-          text: '&copy;The Pattern Shop', 
+        {
+          text: '&copy;The Pattern Shop',
           url: ''
         },
-        { 
-          text: 'Site Map', 
+        {
+          text: 'Site Map',
           url: '/'
         },
-        { 
-          text: 'Terms & Conditions', 
+        {
+          text: 'Terms & Conditions',
           url: '/'
         },
       ],
@@ -115,7 +115,6 @@ export default {
 
   @media (--desktop-lg) {
     flex-direction: row;
-    justify-content: space-evenly;
     flex-grow: 1;
     width: 100rem;
     height: 100%;
