@@ -103,6 +103,7 @@ export default {
   @mixin interpolate margin-bottom, 3, 5;
 
   padding-left: 8px;
+  color: var(--color-black);
 }
 
 .Welcome__text {

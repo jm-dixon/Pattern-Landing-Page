@@ -66,6 +66,7 @@ export default {
 
 .Signup__heading {
   margin-bottom: var(--spacing-xl);
+  color: var(--color-black);
 }
 
 .Signup__name-wrapper {
@@ -152,6 +153,10 @@ input[type=checkbox]:checked::after {
 
 .Signup__brochure-download {
   padding-top: 5em;
+}
+
+.Signup__download-heading {
+  color: var(--color-black);
 }
 
 .Signup__brochure-icon {
