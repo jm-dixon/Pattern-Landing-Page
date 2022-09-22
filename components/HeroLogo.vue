@@ -70,6 +70,22 @@ export default {
   @mixin interpolate width, 10, 20;
 
   width: 25%;
+
+  @media (--phone-lg) {
+    width: 20%;
+  }
+
+  @media (--tablet) {
+    width: 20%;
+  }
+
+  @media (--laptop) {
+    width: 15%;
+  }
+
+  @media (--desktop-lg) {
+    width: 25%;
+  }
 }
 
 .HeroLogo__texture-img {

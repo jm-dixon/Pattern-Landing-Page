@@ -133,7 +133,7 @@ input[type=checkbox]:checked::after {
   width: 100%;
   text-align: left;
 
-  @media (--mobile) {
+  @media (--phone-lg) {
     text-align: center;
   }
 }
