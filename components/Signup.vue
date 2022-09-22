@@ -2,7 +2,7 @@
   <div class="Signup">
     <h1 class="Signup__heading">Sign up<br>for updates</h1>
     <div class="Signup__name-wrapper">
-      <input v-model="firstName" type="text" placeholder="First name">
+      <input v-model="firstName" type="text" placeholder="Full Name">
       <input v-model="lastName" type="text" placeholder="Surname">
     </div>
     <input v-model="email" type="text" placeholder="Email address">
@@ -13,10 +13,12 @@
         for marketing and direct communications.
       </label>
     </div>
-    <button type="submit" class="Signup__submit-button">Submit</button>
+    <div class="Signup__submit">
+      <button type="submit" class="Signup__submit-button">Submit</button>
+    </div>
 
     <div class="Signup__brochure-download">
-      <h1 class="Signup__heading">Download<br />brochure here</h1>
+      <h1 class="Signup__download-heading">Download<br />brochure here</h1>
 
       <img :src="icons.brochureIconUrl" class="Signup__brochure-icon">
       <button type="submit" class="Signup__submit-button">Download</button>
@@ -125,6 +127,15 @@ input[type=checkbox]:checked::after {
   line-height: 1.3;
   margin-left: 2rem;
   cursor: pointer;
+}
+
+.Signup__submit {
+  width: 100%;
+  text-align: left;
+
+  @media (--mobile) {
+    text-align: center;
+  }
 }
 
 .Signup__submit-button {

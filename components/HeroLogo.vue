@@ -68,6 +68,8 @@ export default {
 .HeroLogo__logo-img {
   @mixin interpolate padding-top, 3, 4;
   @mixin interpolate width, 10, 20;
+
+  width: 25%;
 }
 
 .HeroLogo__texture-img {
@@ -84,13 +86,11 @@ export default {
 .HeroLogo__coming-soon {
   @mixin interpolate font-size, 2, 2.5;
 
-  margin-top: var(--spacing-lg);
   margin-bottom: var(--spacing-lg);
   color: var(--color-lighter-orange);
 
   @media (--desktop-lg) {
-    font-size: 3.5rem;
-    margin-top: 7rem;
+    font-size: 3rem;
     margin-bottom: 0;
   }
 }

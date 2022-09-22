@@ -8,9 +8,6 @@
       <a href="/" target="_blank">
         <img :src="foundersPlaceLogo" class="Footer__founders-place-logo-img">
       </a>
-      <a href="/" target="_blank">
-        <img :src="thePioneerLogo" class="Footer__the-pioneer-logo-img">
-      </a>
     </div>
     <div class="Footer__social-icons-wrapper">
       <a
@@ -123,7 +120,7 @@ export default {
 }
 
 .Footer__company-logos img {
-  margin-top: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
 
   @media (--desktop-lg) {
     margin-top: 0;

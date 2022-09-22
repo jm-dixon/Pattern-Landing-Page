@@ -12,22 +12,24 @@
       within spaces that exude soulful character.
     </p>
     <p class="Welcome__text text-default">
-      <u>
-        Download brochure here
-      </u>
+      <a href="/" target="blank">
+        <u>
+          Download brochure here
+        </u>
+      </a>
     </p>
     <p class="Welcome__text text-default">
       If you're intrigued to find out more, our team are on hand to discuss
       your requirements and are always happy to help.
     </p>
     <p class="Welcome__text text-default">
-      <u>Patrick Matheson</u>
+      Patrick Matheson
     </p>
     <div class="Welcome__grid">
       <img :src="icons.phoneIconUrl" class="Welcome__icons">
       <a href="tel:0191 592 5015">
         <p class="Welcome__text text-default">
-          0191 592 5015
+          <u>0191 592 5015</u>
         </p>
       </a>
     </div>
@@ -35,18 +37,18 @@
       <img :src="icons.emailIconUrl" class="Welcome__icons">
         <a href="mailto:patrick.matheson@knightfrank.com">
           <p class="Welcome__text text-default">
-            patrick.matheson@knightfrank.com
+            <u>patrick.matheson@knightfrank.com</u>
           </p>
         </a>
     </div>
     <p class="Welcome__text text-default">
-      <u>Nathan Douglas</u>
+      Nathan Douglas
     </p>
     <div class="Welcome__grid">
       <img :src="icons.phoneIconUrl" class="Welcome__icons">
         <a href="tel:0191 592 5002">
           <p class="Welcome__text text-default">
-            0191 592 5002
+            <u>0191 592 5002</u>
           </p>
         </a>
     </div>
@@ -54,7 +56,7 @@
       <img :src="icons.emailIconUrl" class="Welcome__icons">
         <a href="mailto:nathan.douglas@knightfrank.com">
           <p class="Welcome__text text-default">
-            nathan.douglas@knightfrank.com
+            <u>nathan.douglas@knightfrank.com</u>
           </p>
         </a>
     </div>
@@ -105,6 +107,7 @@ export default {
 
 .Welcome__text {
   line-height: 1.3;
+  color: var(--color-black);
 }
 
 .Welcome__text:not(:first-of-type) {
@@ -113,7 +116,12 @@ export default {
 
 .Welcome__icons {
   width: 100%;
-  margin-top: 2em;
+  margin-top: 1.8em;
+
+  @media (--desktop-lg) {
+    width: 100%;
+    margin-top: 2.7em;
+  }
 }
 
 .Welcome__grid {
