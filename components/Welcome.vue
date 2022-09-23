@@ -126,14 +126,20 @@ export default {
 }
 
 .Welcome__grid {
-  display: grid;
-  grid-template-columns: 3% 97%;
+  display: flex;
   column-gap: 10px;
   margin: 1em 0 1em 0;
-}
+  justify-content: flex-start;
+  align-items: center;
 
-.Welcome__grid p {
-  margin-top: 0.5em;
+  img {
+    width: 6%;
+    margin: auto 0;
+  }
+
+  p {
+    margin: auto 0;
+  }
 }
 
 </style>
