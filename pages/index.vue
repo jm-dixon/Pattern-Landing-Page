@@ -1,9 +1,10 @@
 <template>
   <div class="Home">
-    <HeroLogo />
-    <HeroImage />
-    <Welcome />
-    <Signup />
+    <TheHero />
+    <div class="Home__body grid">
+      <Welcome />
+      <Signup />
+    </div>
     <Footer />
   </div>
 </template>
@@ -39,10 +40,10 @@ export default {
 </script>
 
 <style lang="postcss">
-@import "~/assets/css/main.css";
 @import "~/assets/css/settings/media-queries.css";
 @import "~/assets/css/mixins/utils.css";
 
+/*
 .Home {
   width: 100%;
   height: 100vh;
@@ -53,7 +54,9 @@ export default {
     grid-template-rows: 80rem auto 30rem;
   }
 }
+*/
 
+/*
 .HeroLogo {
   @mixin interpolate height, 45, 65;
 
@@ -65,14 +68,15 @@ export default {
     grid-row: 1 / 2;
   }
 }
+*/
 
-.HeroImage {
-  @mixin interpolate height, 45, 65;
+.Home__body {
+  /* --grid-row-gap: var(--spacing-xl); */
 
-  @media (--desktop-lg) {
-    height: 80rem;
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
+  @media (--laptop) {
+    --grid-columns: 2;
+    --grid-column-gap: 0;
+    --grid-row-gap: 0;
   }
 }
 

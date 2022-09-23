@@ -8,6 +8,7 @@
 @import "./settings/type";
 @import "./settings/colors";
 @import "./settings/vars";
+@import "./settings/page";
 
 /* Layout */
 @import "./layout/flex";

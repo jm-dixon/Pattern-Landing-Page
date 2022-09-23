@@ -21,12 +21,22 @@ export default {
 <style lang="postcss">
 @import "~/assets/css/settings/media-queries.css";
 @import "~/assets/css/mixins/utils.css";
+@import "~/assets/css/mixins/media.css";
 
 .HeroImage {
-  width: 100%;
+  @mixin media;
+  @mixin media-full;
+
+  /*
+  @media (--desktop-lg) {
+    height: 80rem;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  */
 }
 
-.HeroImage__image {
+/* .HeroImage__image {
   @mixin interpolate height, 45, 65;
 
   width: 100%;
@@ -35,5 +45,5 @@ export default {
   @media (--desktop-lg) {
     height: 80rem;
   }
-}
+} */
 </style>

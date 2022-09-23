@@ -9,14 +9,16 @@
         <img :src="foundersPlaceLogo" class="Footer__founders-place-logo-img">
       </a>
     </div>
-    <div class="Footer__social-icons-wrapper">
+    <div class="Footer__social-links">
       <a
-        v-for="(obj, key) in socialIcons"
-        :key="key" :src="obj.url"
-        :href="obj.externalUrl"
-        target="_blank"
+        v-for="icon in socialLinks"
+        :key="icon.name"
+        :href="icon.url"
       >
-        <img :src="obj.icon" class="Footer__social-icon-img">
+        <component
+          :is="`Icon${icon.name}`"
+          class="Footer__social-icon"
+        />
       </a>
     </div>
 
@@ -64,7 +66,7 @@ export default {
         facebook: {
           icon: FacebookIcon,
           externalUrl: 'https://www.facebook.com/',
-        },
+        }
       },
       footerLinks: [
         {
@@ -82,6 +84,16 @@ export default {
       ],
     };
   },
+  computed: {
+    socialLinks() {
+      return [
+        { name: 'Instagram', url: '#' },
+        { name: 'Twitter', url: '#' },
+        { name: 'Youtube', url: '#' },
+        { name: 'Facebook', url: '#' },
+      ];
+    },
+  }
 }
 </script>
 
@@ -97,25 +109,35 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  row-gap: var(--spacing-xl);
+  padding:
+    var(--spacing-xl)
+    var(--spacing-sm)
+    var(--spacing-lg)
+    var(--spacing-sm);
 
-  @media (--desktop-lg) {
+  @media (--laptop) {
     flex-direction: row;
+    height: 22.5rem;
+    padding: 5rem 8.5rem 5rem 8.5rem;
+  }
+
+  @media (--tablet) {
   }
 }
 
 .Footer__company-logos {
   display: flex;
   flex-direction: column;
+  row-gap: var(--spacing-lg);
   align-items: center;
   width: 100%;
-  margin-bottom: var(--spacing-2xl);
 
-  @media (--desktop-lg) {
+  @media (--laptop) {
     flex-direction: row;
     flex-grow: 1;
-    width: 100rem;
+    column-gap: var(--spacing-xl);
     height: 100%;
-    margin-bottom: 0;
   }
 }
 
@@ -151,14 +173,24 @@ export default {
   @mixin fluid-value height, 5.5, 6, 320, 768;
 }
 
+.Footer__social-links {
+  display: flex;
+  column-gap: var(--spacing-sm);
+  order: -1;
+  color: var(--color-secondary);
+
+  @media (--laptop) {
+    order: initial;
+  }
+}
+
 .Footer__social-icons-wrapper {
   order: -1;
   margin-top: var(--spacing-xl);
 
-  @media (--desktop-lg) {
-    width: 23vw;
-    text-align: center;
+  @media (--laptop) {
     order: initial;
+    text-align: center;
     margin-top: 0;
   }
 }
@@ -170,7 +202,11 @@ export default {
 
 .Footer__social-icon-img {
   margin: 0 var(--spacing-sm);
-  width: 5rem;
+  width: 4.5rem;
+
+  @media (--laptop) {
+    width: 5rem;
+  }
 
   @media (--desktop-lg) {
     margin: 0 var(--spacing-xs);
