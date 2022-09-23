@@ -23,6 +23,13 @@
  */
 
 :root {
+  --color-primary: #fcb726;
+  --color-lighter-orange: #ffd166;
+  --color-black: #142628;
+  --color-light-grey: #999;
+  --color-grey: #666;
+  --color-white: #fff;
+
   /* Shadows */
   --light-shadow: 3px 4px 14px rgb(0 0 0 / 15%);
   --shadow: 0 1px 16px rgb(0 0 0 / 25%);
@@ -37,6 +44,8 @@
   --title: "Freight", serif;
   --text: "Freight", serif;
   --link: "Replica", sans-serif;
+
+  --font-default: 'IBM Plex Sans R', sans-serif;
 
   /* Spacing. */
   --spacing-xs: 0.5rem;
@@ -108,4 +117,7 @@
   --Grid__segment: calc(var(--Grid__remainder) / var(--Grid__columns));
   --Grid__column: calc(var(--Grid__segment) + var(--Grid__gutter));
   --Grid__maxWidth--grid: calc(var(--Grid__maxWidth) + (var(--Grid__gutter) * 2));
+
+  --min-interpolation-width: 320;
+  --max-interpolation-width: 1280;
 }

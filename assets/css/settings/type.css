@@ -51,3 +51,19 @@ h6,
 
   font-family: var(--font-default);
 }
+
+.text-color-primary {
+  color: var(--color-primary);
+}
+
+.text-color-orange-light {
+  color: var(--color-lighter-orange);
+}
+
+.text-color-secondary {
+  color: var(--color-secondary);
+}
+
+.text-color-white {
+  color: var(--color-white);
+}

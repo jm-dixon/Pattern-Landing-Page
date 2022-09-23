@@ -6,7 +6,6 @@
 /* Settings */
 @import "./settings/font";
 @import "./settings/type";
-@import "./settings/colors";
 @import "./settings/vars";
 @import "./settings/page";
 
