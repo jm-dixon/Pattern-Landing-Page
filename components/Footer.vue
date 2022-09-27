@@ -5,9 +5,6 @@
         <LogoThePatternShop class="TheFooter__logo TheFooter__logo--pattern-shop text-color-white" />
       </a>
       <a href="/" target="_blank">
-        <LogoThePioneer class="TheFooter__logo text-color-white" />
-      </a>
-      <a href="/" target="_blank">
         <LogoFoundersPlace class="TheFooter__logo text-color-orange-light" />
       </a>
     </div>

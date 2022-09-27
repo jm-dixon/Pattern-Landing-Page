@@ -133,7 +133,7 @@ export default {
   align-items: center;
 
   img {
-    width: 6%;
+    width: 3%;
     margin: auto 0;
   }
 

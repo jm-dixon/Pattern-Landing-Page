@@ -20,7 +20,6 @@
     <div class="Signup__brochure-download">
       <h1 class="Signup__download-heading">Download<br />brochure here</h1>
 
-      <img :src="icons.brochureIconUrl" class="Signup__brochure-icon">
       <button type="submit" class="Signup__submit-button">Download</button>
     </div>
   </div>
@@ -141,14 +140,11 @@ input[type=checkbox]:checked::after {
 
 .Signup__submit-button {
   @mixin interpolate font-size, 2, 2.6;
-  @mixin interpolate padding-left, 5, 10;
-  @mixin interpolate padding-right, 5, 10;
-  @mixin interpolate padding-top, 1.2, 2;
-  @mixin interpolate padding-bottom, 1.2, 2;
 
   margin-top: var(--spacing-lg);
   background-color: black;
   color: var(--color-primary);
+  padding: 1rem 9rem;
 }
 
 .Signup__brochure-download {
@@ -157,12 +153,6 @@ input[type=checkbox]:checked::after {
 
 .Signup__download-heading {
   color: var(--color-black);
-}
-
-.Signup__brochure-icon {
-  margin-top: var(--spacing-lg);
-  margin-right: 3em;
-  width: 7%;
 }
 
 </style>
