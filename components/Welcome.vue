@@ -34,7 +34,7 @@
       </a>
     </div>
     <div class="Welcome__grid">
-      <img :src="icons.emailIconUrl" class="Welcome__icons">
+      <img :src="icons.emailIconUrl" class="Welcome__icons email">
         <a href="mailto:patrick.matheson@knightfrank.com">
           <p class="Welcome__text text-default">
             <u>patrick.matheson@knightfrank.com</u>
@@ -53,7 +53,7 @@
         </a>
     </div>
     <div class="Welcome__grid">
-      <img :src="icons.emailIconUrl" class="Welcome__icons">
+      <img :src="icons.emailIconUrl" class="Welcome__icons email">
         <a href="mailto:nathan.douglas@knightfrank.com">
           <p class="Welcome__text text-default">
             <u>nathan.douglas@knightfrank.com</u>
@@ -140,6 +140,10 @@ export default {
   p {
     margin: auto 0;
   }
+}
+
+.email {
+  padding-top: 0.5em;
 }
 
 </style>
