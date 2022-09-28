@@ -4,14 +4,14 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'the-pattern-shop',
+    title: 'The Pattern Shop | The Ideal Base for Businesses Looking to Make Their Mark',
     htmlAttrs: {
       lang: 'en',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'The Pattern Shop | The Ideal Base for Businesses Looking to Make Their Mark' },
+      { hid: 'description', name: 'description', content: "Reinvented for today's innovators, located in the heart of the vibrant city of Newcastle adjacent to Central Station, this extraordinary building with its remarkable 200-year history, is the ideal base for businesses looking to make their mark." },
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],

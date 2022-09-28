@@ -1,7 +1,7 @@
 <template>
   <div class="TheFooter">
     <div class="TheFooter__company-logos">
-      <a href="https://www.patternshopnewcastle.co.uk" target="_blank">
+      <a href="/" target="_blank">
         <LogoThePatternShop class="TheFooter__logo TheFooter__logo--pattern-shop text-color-white" />
       </a>
       <a href="https://www.foundersplacenewcastle.co.uk" target="_blank">

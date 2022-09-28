@@ -117,7 +117,7 @@ input[type=checkbox] {
 input[type=checkbox]:checked::after {
   content: '\00d7';
   position: relative;
-  top: -13px;
+  top: -23px;
   left: -2px;
 }
 
