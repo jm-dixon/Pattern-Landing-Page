@@ -1,10 +1,10 @@
 <template>
   <div class="TheFooter">
     <div class="TheFooter__company-logos">
-      <a href="/" target="_blank">
+      <a href="https://www.patternshopnewcastle.co.uk" target="_blank">
         <LogoThePatternShop class="TheFooter__logo TheFooter__logo--pattern-shop text-color-white" />
       </a>
-      <a href="/" target="_blank">
+      <a href="https://www.foundersplacenewcastle.co.uk" target="_blank">
         <LogoFoundersPlace class="TheFooter__logo text-color-orange-light" />
       </a>
     </div>
@@ -52,7 +52,6 @@ export default {
 
     navLinks() {
       return [
-        { name: 'Sitemap', url: '#' },
         { name: 'Terms & Conditions', url: '#'},
       ];
     },
