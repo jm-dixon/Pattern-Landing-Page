@@ -1,64 +1,60 @@
 <template>
   <div class="Welcome">
-    <h1 class="Welcome__heading">Welcome to<br>The Pattern Shop</h1>
+    <h1 class="Welcome__heading">Welcome to<br />The Pattern Shop</h1>
     <p class="Welcome__text text-default">
-      Reinvented for today's innovators, located in the heart of the vibrant city of Newcastle adjacent
-      to Central Station, this extraordinary building with its remarkable 200-year history, is the ideal
-      base for businesses looking to make their mark.
+      Reinvented for today’s innovators and located in the heart of the vibrant
+      city of Newcastle adjacent to Central Station, this extraordinary building
+      with its remarkable 200-year history, is the ideal base for businesses
+      looking to make their mark.
     </p>
     <p class="Welcome__text text-default">
-      Offering flexible office spaces between 1,108 sqft and 32,367 sqft, across 4 floors, The Pattern
-      Shop brings you industry leading digital connectivityity and best in class sustainability technology
-      within spaces that exude soulful character.
+      The Pattern Shop brings industry leading digital connectivity and best in
+      class sustainability technology, whilst retaining its soulful character,
+      to offer you flexible office spaces between 1,108 sqft and 32,367 sqft,
+      across 4 floors.
     </p>
     <p class="Welcome__text text-default">
-      <a href="/" target="blank">
-        <u>
-          Download brochure here
-        </u>
+      <a href="#" target="blank">
+        <u> Download brochure here </u>
       </a>
     </p>
     <p class="Welcome__text text-default">
-      If you're intrigued to find out more, our team are on hand to discuss
-      your requirements and are always happy to help.
+      If you’re intrigued to find out more, our team are on hand to discuss your
+      requirements and are always happy to help.
     </p>
-    <p class="Welcome__text text-default">
-      Patrick Matheson
-    </p>
+    <p class="Welcome__text text-default">Patrick Matheson</p>
     <div class="Welcome__grid">
-      <img :src="icons.phoneIconUrl" class="Welcome__icons">
-      <a href="tel:0191 592 5015">
+      <img :src="icons.phoneIconUrl" class="Welcome__icons" />
+      <a href="tel:+441915925015">
         <p class="Welcome__text text-default">
           <u>0191 592 5015</u>
         </p>
       </a>
     </div>
     <div class="Welcome__grid">
-      <img :src="icons.emailIconUrl" class="Welcome__icons email">
-        <a href="mailto:patrick.matheson@knightfrank.com">
-          <p class="Welcome__text text-default">
-            <u>patrick.matheson@knightfrank.com</u>
-          </p>
-        </a>
+      <img :src="icons.emailIconUrl" class="Welcome__icons email" />
+      <a href="mailto:patrick.matheson@knightfrank.com">
+        <p class="Welcome__text text-default">
+          <u>patrick.matheson@knightfrank.com</u>
+        </p>
+      </a>
     </div>
-    <p class="Welcome__text text-default">
-      Nathan Douglas
-    </p>
+    <p class="Welcome__text text-default">Nathan Douglas</p>
     <div class="Welcome__grid">
-      <img :src="icons.phoneIconUrl" class="Welcome__icons">
-        <a href="tel:0191 592 5002">
-          <p class="Welcome__text text-default">
-            <u>0191 592 5002</u>
-          </p>
-        </a>
+      <img :src="icons.phoneIconUrl" class="Welcome__icons" />
+      <a href="tel:+441915925002">
+        <p class="Welcome__text text-default">
+          <u>0191 592 5002</u>
+        </p>
+      </a>
     </div>
     <div class="Welcome__grid">
-      <img :src="icons.emailIconUrl" class="Welcome__icons email">
-        <a href="mailto:nathan.douglas@knightfrank.com">
-          <p class="Welcome__text text-default">
-            <u>nathan.douglas@knightfrank.com</u>
-          </p>
-        </a>
+      <img :src="icons.emailIconUrl" class="Welcome__icons email" />
+      <a href="mailto:nathan.douglas@knightfrank.com">
+        <p class="Welcome__text text-default">
+          <u>nathan.douglas@knightfrank.com</u>
+        </p>
+      </a>
     </div>
   </div>
 </template>
@@ -145,5 +141,4 @@ export default {
 .email {
   padding-top: 0.5em;
 }
-
 </style>

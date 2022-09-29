@@ -12,16 +12,19 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-  .TheHero {
-    height: calc(100vh - var(--spacing-md));
-    display: flex;
+@import "~/assets/css/settings/media-queries.css";
 
-    & > * {
-      flex: 1;
-    }
+.TheHero {
+  height: calc(100vh - var(--spacing-md));
+  display: flex;
+  flex-direction: column;
 
-    @media (--laptop) {
-      flex-direction: row;
-    }
+  & > * {
+    flex: 1;
   }
+
+  @media (--tablet) {
+    flex-direction: row;
+  }
+}
 </style>

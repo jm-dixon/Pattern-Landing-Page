@@ -4,6 +4,9 @@
       <a href="/" target="_blank">
         <LogoThePatternShop class="TheFooter__logo TheFooter__logo--pattern-shop text-color-white" />
       </a>
+      <a href="https://www.thepioneernewcastle.co.uk" target="_blank">
+        <LogoThePioneer class="TheFooter__logo text-color-white" />
+      </a>
       <a href="https://www.foundersplacenewcastle.co.uk" target="_blank">
         <LogoFoundersPlace class="TheFooter__logo text-color-orange-light" />
       </a>

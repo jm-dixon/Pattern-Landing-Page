@@ -1,16 +1,20 @@
 <template>
   <div class="Signup">
-    <h1 class="Signup__heading">Sign up<br>for updates</h1>
+    <h1 class="Signup__heading">Sign up<br />for updates</h1>
     <div class="Signup__name-wrapper">
-      <input v-model="firstName" type="text" placeholder="Full Name">
-      <input v-model="lastName" type="text" placeholder="Surname">
+      <input v-model="firstName" type="text" placeholder="Full Name" />
+      <input v-model="lastName" type="text" placeholder="Surname" />
     </div>
-    <input v-model="email" type="text" placeholder="Email address">
+    <input v-model="email" type="text" placeholder="Email address" />
     <div class="Signup__terms-wrapper">
-      <input id="terms-conditions" v-model="acceptedTermsConditions" type="checkbox">
+      <input
+        id="terms-conditions"
+        v-model="acceptedTermsConditions"
+        type="checkbox"
+      />
       <label for="terms-conditions" class="Signup__terms-label">
-        I agree for The Pattern Shop to use the submitted information
-        for marketing and direct communications.
+        I agree for The Pattern Shop to use the submitted information for
+        marketing and direct communications.
       </label>
     </div>
     <div class="Signup__submit">
@@ -19,8 +23,10 @@
 
     <div class="Signup__brochure-download">
       <h1 class="Signup__download-heading">Download<br />brochure here</h1>
-
-      <button type="submit" class="Signup__submit-button">Download</button>
+      <div class="Signup__download-cluster">
+        <img :src="icons.brochureIconUrl" class="Signup__brochure-icon" />
+        <button type="submit" class="Signup__download-button">Download</button>
+      </div>
     </div>
   </div>
 </template>
@@ -86,7 +92,7 @@ export default {
   margin-top: 2rem;
 }
 
-input[type=text] {
+input[type="text"] {
   @mixin interpolate height, 4, 5.5;
 
   width: 100%;
@@ -95,13 +101,13 @@ input[type=text] {
   border: 1px solid var(--color-light-grey);
 }
 
-input[type=text]::placeholder {
+input[type="text"]::placeholder {
   @mixin interpolate font-size, 1.4, 1.8;
 
   font-family: var(--font-default);
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
   width: 3.5rem;
   height: 3.5rem;
   /* stylelint-disable */
@@ -114,8 +120,8 @@ input[type=checkbox] {
   font-size: 3rem;
 }
 
-input[type=checkbox]:checked::after {
-  content: '\00d7';
+input[type="checkbox"]:checked::after {
+  content: "\00d7";
   position: relative;
   top: -23px;
   left: -2px;
@@ -147,6 +153,19 @@ input[type=checkbox]:checked::after {
   padding: 1rem 9rem;
 }
 
+.Signup__download-cluster {
+  margin-top: 5rem;
+  display: flex;
+}
+
+.Signup__download-button {
+  @mixin interpolate font-size, 2, 2.6;
+
+  background-color: black;
+  color: var(--color-primary);
+  padding: 1rem 9rem;
+}
+
 .Signup__brochure-download {
   padding-top: 5em;
 }
@@ -155,4 +174,8 @@ input[type=checkbox]:checked::after {
   color: var(--color-black);
 }
 
+.Signup__brochure-icon {
+  width: 4rem;
+  margin-right: 2rem;
+}
 </style>
