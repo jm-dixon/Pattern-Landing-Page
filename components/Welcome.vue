@@ -13,16 +13,16 @@
       to offer you flexible office spaces between 1,108 sqft and 32,367 sqft,
       across 4 floors.
     </p>
-    <p class="Welcome__text text-default">
-      <a href="#" target="blank">
+    <p class="Welcome__text_subheading text-default">
+      <a href="#" target="blank" class="text-bold">
         <u> Download brochure here </u>
       </a>
     </p>
-    <p class="Welcome__text text-default">
+    <p class="Welcome__text_subheading text-default">
       If you’re intrigued to find out more, our team are on hand to discuss your
       requirements and are always happy to help.
     </p>
-    <p class="Welcome__text text-default">Patrick Matheson</p>
+    <p class="Welcome__text_subheading text-bold">Patrick Matheson</p>
     <div class="Welcome__grid">
       <img :src="icons.phoneIconUrl" class="Welcome__icons" />
       <a href="tel:+441915925015">
@@ -39,7 +39,7 @@
         </p>
       </a>
     </div>
-    <p class="Welcome__text text-default">Nathan Douglas</p>
+    <p class="Welcome__text_subheading text-bold">Nathan Douglas</p>
     <div class="Welcome__grid">
       <img :src="icons.phoneIconUrl" class="Welcome__icons" />
       <a href="tel:+441915925002">
@@ -103,6 +103,12 @@ export default {
 }
 
 .Welcome__text {
+  line-height: 1.3;
+  color: var(--color-black);
+}
+
+.Welcome__text_subheading {
+  margin-top: 4rem;
   line-height: 1.3;
   color: var(--color-black);
 }

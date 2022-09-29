@@ -52,6 +52,12 @@ h6,
   font-family: var(--font-default);
 }
 
+.text-bold {
+  @mixin fluid-value font-size, 1.8, 2.8, 320, 1280;
+
+  font-family: var(--font-bold);
+}
+
 .text-color-primary {
   color: var(--color-primary);
 }
