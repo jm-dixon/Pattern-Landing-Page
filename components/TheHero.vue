@@ -15,7 +15,6 @@ export default {
   .TheHero {
     height: calc(100vh - var(--spacing-md));
     display: flex;
-    flex-direction: column;
 
     & > * {
       flex: 1;
