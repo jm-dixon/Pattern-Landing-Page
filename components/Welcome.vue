@@ -14,7 +14,7 @@
       across 4 floors.
     </p>
     <p class="Welcome__text_subheading text-default">
-      <a href="#" target="blank" class="text-bold">
+      <a href="/pdf/the-pattern-shop-newcastle-brochure.pdf" download class="text-bold">
         <u> Download brochure here </u>
       </a>
     </p>
