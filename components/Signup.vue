@@ -25,7 +25,7 @@
       <h1 class="Signup__download-heading">Download<br />brochure here</h1>
       <div class="Signup__download-cluster">
         <img :src="icons.brochureIconUrl" class="Signup__brochure-icon" />
-        <button type="submit" class="Signup__download-button">Download</button>
+        <a href="/pdf/the-pattern-shop-newcastle-brochure.pdf" download class="Signup__download-button">Download</a>
       </div>
     </div>
   </div>
